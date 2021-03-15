@@ -1,0 +1,18 @@
+// basic protocol file
+
+syntax = "proto3";
+
+message Req
+{
+  string message = 1;
+}
+
+message Res
+{
+  string message = 1;
+  uint32 req_number = 2;
+}
+
+service Greeter {
+  rpc say_hello(Req) returns (Res) {}
+}
