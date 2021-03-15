@@ -2,12 +2,9 @@ import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
 
-import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 public class GRPCClient {
-
-    private GreeterGrpc.GreeterBlockingStub greeterBlockingStub;
 
     public static void main(String[] args) {
         if (args.length != 1) {
