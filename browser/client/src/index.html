@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <style>
+            html, body {
+                background-color: black;
+                color:white;
+                display: table;
+                width: 100%;
+                height: 100vh;
+            }
+            .centerd
+            {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="centerd">
+            <span>Enter a message: </span> <input id="messageFld"/> <button id="sendBtn">Send</button>
+            <div id="respCtnr">
+
+            </div>
+        </div>
+
+    </body>
+</html>
